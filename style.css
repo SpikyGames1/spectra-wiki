@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+    font-family: "Roboto";
+    background-color: #202021;
+}
+
+
+p {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+
+.subpart {
+  margin-top: -30px;
+}
+
+.subcontext {
+  margin-top: 11vh;
+}
+
+
+hr {
+  margin-top: 0.5vh;
+  margin-bottom: 4vh;
+}
+
+.orange {
+    color: darkorange; !important
+}
+
+table {
+  text-align: center;
+  color: white;
+  border-collapse: collapse;
+}
+
+.link {
+  color: lightblue;
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+
+.image {
+  max-width: 90%;
+  border-radius: 15px;
+  margin-left: 0.8vw;
+}
+
+.lavender {
+    color: #9966CC; !important
+}
+.content {
+    font-size: 20px;
+    padding-top: 1vh;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    color: white;
+}
+/* Sidebar Styles */
+.sidebar {
+    color: white;
+    font-family: "Roboto";
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+li > a {
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li {
+    color: white;
+}
+
+li, li > a:hover {
+    color: lightblue;
+}
+
+.sidebar-selected {
+  color: blue;
+}
+
+#sidebar-toggle {
+    display: none;
+}
+
+.button {
+  text-decoration: none; 
+  color: white;          
+  background-color: rebeccapurple; /* rest in peace. */
+  border: none;          
+  padding: 10px 20px;    
+  border-radius: 999px;   
+  display: inline-block; 
+  text-align: center;    
+  transition: background-color 0.3s ease;
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+
+#sidebar-toggle:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+}
+
+
+.toggle-label {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1000;
+    color: #333;
+    user-select: none;
+    transition: left 0.3s ease;
+}
+
+#sidebar-toggle:checked ~ .toggle-label {
+    left: 260px;
+}
