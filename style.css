@@ -9,8 +9,7 @@ html {
 
 
 p {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin: 4vh 0 4vh 0;
 }
 
 
@@ -23,9 +22,15 @@ p {
 }
 
 
+.part {
+  margin-top: -3vh;
+  margin-left: 0.8vw;
+  background-color: #111112;
+  border-radius: 15px;
+}
+
 hr {
-  margin-top: 0.5vh;
-  margin-bottom: 4vh;
+  margin: 0.5vh 0 4vh 0;
 }
 
 .orange {
@@ -40,7 +45,13 @@ table {
 
 .link {
   color: lightblue;
+  transition: all 0.5s ease;
 }
+
+.link:hover {
+  color: #B6BE9C;
+}
+
 
 .highlight {
   text-decoration: underline;
@@ -59,8 +70,7 @@ table {
 .content {
     font-size: 20px;
     padding-top: 1vh;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    margin: 0 2.5vw 0 2.5vw;
     color: white;
 }
 /* Sidebar Styles */
@@ -99,7 +109,7 @@ li {
     color: white;
 }
 
-li, li > a:hover {
+li h3, li > a:hover {
     color: lightblue;
 }
 
@@ -110,6 +120,14 @@ li, li > a:hover {
 #sidebar-toggle {
     display: none;
 }
+
+
+code {
+  padding: 0 5px 0 5px;
+  border-radius: 7px;
+  background-color: #0c0c0d;
+}
+
 
 .button {
   text-decoration: none; 
