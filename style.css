@@ -89,7 +89,7 @@ table {
     top: 0;
     width: 250px;
     height: 100%;
-    background-color: #333;
+    background-color: #373737;
     transition: left 0.3s ease;
 }
 
@@ -101,6 +101,12 @@ table {
 .sidebar nav ul li {
     margin-bottom: 20px;
 }
+
+
+.sider li {
+  color: darkteal;
+}
+
 
 li > a {
   transition: all 0.3s ease;
