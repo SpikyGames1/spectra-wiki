@@ -490,6 +490,118 @@
           <h2>Admin Commands</h2>
           </center>
           <hr size=2 color="white">
+          <center>
+            <p>
+            The list will go in A-Z order. If you want to see a specific command, Choose one here:
+            </p>
+            <table wdith="50%" class="no-outline-table">
+              <tr>
+                <td><a class="link" href="#backup">/backup</a></td>
+                <td><a class="link" href="#create-command">/create_command</a></td>
+                <td><a class="link" href="#delete-command">/delete_command</a></td>
+              </tr>
+              <tr>
+                <td><a class="link" href="#modify-setting">/modify_setting</a></td>
+                <td><a class="link" href="#servercreate">/servercreate</a></td>
+                <td><a class="link" href="#servertemplate">/servertemplate</a></td>
+              </tr>
+            </table>
+            <table width="25%" class="no-outline-table">
+              <tr>
+                <td><a class="link" href="#settings">/settings</a></td>
+                <td><a class="link" href="#level">/level</a></td>
+              </tr>
+            </table>
+          </center>
+          <p id="backup">
+            <strong>/backup</strong> <br>
+            Backup your server's channels, permissions & roles <br>
+            Parameters:
+            <div class="part">
+              <ul type="square">
+                <li><strong>action</strong></li>
+      Specify whether or not you want CREATE a backup or RESTORE a backup (Server Owner ONLY!) (<strong>⚠️NOTE:</strong> RESTORING a backup will delete all the current channels! So be careful. Also, the <a class="link" href="spectra-features.html">'server-backup'</a> setting must be enabled for this to work!)
+              </ul>
+            </div>
+          </p>
+          <p id="create-command">
+          <strong>/create_command</strong> <br>
+          Create your own slash command for your own server! <br>
+          Parameters:
+          <div class="part">
+            <ul type="square">
+              <li><strong>command_name</strong></li>
+              The name of the command, which will appear like: /(command_name) <br> &nbsp;
+              <li><strong>command_description</strong></li>
+              The description of the command. Meant to be short and informative about what the command does. <br> &nbsp;
+              <li><strong>embed_title</strong></li>
+              The title of the embed, which will be shown when the command is executed <br> &nbsp;
+              <li><strong>embed_description</strong></li>
+              The description of the embed, which will be shown when the command is executed <br> &nbsp;
+              <li><strong>embed_footer</strong></li>
+              The footer of the embed, which will be shown when the command is executed <br> &nbsp;
+              <li><strong>embed_thumbnail</strong></li>
+              The thumbnail of the embed (the link of the IMAGE should be provided), will appear as a small image when the command is executed <br> &nbsp;
+              <li><strong>embed_color</strong></li>
+              The color of the embed, will be shown as a strip on the left of the embed when the command is executed <br> &nbsp;
+              <li><strong>ephemeral</strong></li>
+              Choose whether the message should only be visible to the user OR the entire server
+            </ul>
+          </div>
+          </p>
+          <p id="delete-command">
+          <strong>/delete_command</strong> <br>
+          Delete a custom made command <br>
+          Parameters:
+          <div class="part">
+            <ul type="square">
+              <li><strong>command_name</strong></li>
+              The name of the command you want to delete
+            </ul>
+          </div>
+          </p>
+          <p id="modify-setting">
+            <strong>/modify_setting</strong> <br>
+            Modify a setting that has been enabled. You will be guided by the bot itself when you enter the command <br>
+            Parameters:
+            <div class="part">
+              <ul type="square">
+                <li><strong>setting</strong></li>
+                The setting you want to modify
+              </ul>
+            </div>
+          </p>
+          <p id="servercreate">
+          <strong>/servercreate</strong> <br>
+            If you are making a new server and are too lazy to create all the channels and want to focus on creating roles and other things then you can use this command to create the channels (along with a few permissions)
+          <p id="servertemplate">
+          <strong>/servertemplate</strong> <br>
+          View the templates avilable for <a href="#servercreate" class="link">/servercreate</a> command
+          </p>
+          <p id="settings">
+          <strong>/settings</strong> <BR>
+          Enable/Disable/View settings. <br>
+          Parameters:
+          <div class="part">
+            <ul type="square">
+              <li><strong>action</strong></li>
+              Specifiy if you want to enable/disable a setting. <br> &nbsp;
+              <li><strong>setting</strong></li>
+              Name of the setting
+            </ul>
+          </div>
+          </p>
+          <p id="ticket">
+          <strong>/ticket</strong> <br>
+          Make a ticket for server support and other reasons. <br>
+          Parameters:
+          <div class="part">
+            <ul type="square">
+              <li><strong>reason: </strong></li>
+              Enter the reason for the description of th echannel and its reason for creation
+            </ul>
+          </div>
+          </p>
           <p id="level">
           <strong>/level</strong>
             Check your (or another person's) level/xp (IF <a class="link" href="spectra-features.html">levelling-system</a> is enabled)
@@ -511,6 +623,17 @@
             The list will go in an A-Z order.
             </center>
           </p>
+        <p id="avatar">
+          <strong>/avatar</strong> <br>
+            Get a user's avatar. <br>
+            Parameters:
+            <div class="part">
+              <ul type="square">
+                <li><strong>user</strong></li>
+                The target user who you want to see the avatar of.
+              </ul>
+            </div>
+        </p>
         <p id="ping">
         <strong>/ping</strong> <br>
         Check the bot's latency
